@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane prefHeight="650.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerPacientes.RegHistorialMedico">
+   <content>
+      <AnchorPane prefHeight="1092.0" prefWidth="1110.0">
+          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2ceff" height="36.0" layoutX="40.0" layoutY="71.0" stroke="#f2ceff" strokeType="INSIDE" strokeWidth="0.0" width="1028.0" AnchorPane.rightAnchor="42.0" />
+          <Text layoutX="56.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 19;" text="Historial Médico">
+              <font>
+                  <Font size="11.0" />
+              </font>
+          </Text>
+          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1006.0" layoutY="74.0">
+              <image>
+                  <Image url="@../imagenes/histMedico.png" />
+              </image>
+          </ImageView>
+          <Text layoutX="59.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Antecedentes Familiares" />
+          <Text layoutX="99.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 1" />
+          <TextField fx:id="txtFieldAntFamiliar1" layoutX="99.0" layoutY="160.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Cáncer de piel">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="659.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Grado de consanguinidad" />
+          <TextField fx:id="txtFieldGradoConsanginidad1" layoutX="659.0" layoutY="158.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 1">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="99.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 2" />
+          <TextField fx:id="txtFieldAntFamiliar2" layoutX="99.0" layoutY="223.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Cáncer de piel">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="99.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 3" />
+          <TextField fx:id="txtFieldAntFamiliar3" layoutX="99.0" layoutY="287.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Cáncer de piel">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="99.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 4" />
+          <TextField fx:id="txtFieldAntFamiliar4" layoutX="99.0" layoutY="351.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Cáncer de piel">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="97.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 1" />
+          <TextField fx:id="txtFieldAntPersonal1" layoutX="97.0" layoutY="507.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Operación de amígdalas">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="659.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Grado de consanguinidad" />
+          <TextField fx:id="txtFieldGradoConsanginidad2" layoutX="659.0" layoutY="223.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 1">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="659.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Grado de consanguinidad" />
+          <TextField fx:id="txtFieldGradoConsanginidad3" layoutX="659.0" layoutY="287.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 1">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="659.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Grado de consanguinidad" />
+          <TextField fx:id="txtFieldGradoConsanginidad4" layoutX="659.0" layoutY="351.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 1">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="659.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Grado de consanguinidad" />
+          <TextField fx:id="txtFieldGradoConsanginidad5" layoutX="659.0" layoutY="414.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 1">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="56.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Antecedentes Personales" />
+          <Text layoutX="96.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 2" />
+          <TextField fx:id="txtFieldAntPersonal2" layoutX="96.0" layoutY="570.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Operación de amígdalas">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="96.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 3" />
+          <TextField fx:id="txtFieldAntPersonal3" layoutX="96.0" layoutY="634.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Operación de amígdalas">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="96.0" layoutY="694.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 4" />
+          <TextField fx:id="txtFieldAntPersonal4" layoutX="96.0" layoutY="698.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Operación de amígdalas">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="97.0" layoutY="757.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 5" />
+          <TextField fx:id="txtFieldAntPersonal5" layoutX="97.0" layoutY="761.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Operación de amígdalas">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="101.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Antecedente 5" />
+          <TextField fx:id="txtFieldAntFamiliar5" layoutX="101.0" layoutY="415.0" prefHeight="31.0" prefWidth="453.0" promptText="Ej: Cáncer de piel">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="655.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldTiempoAP1" layoutX="655.0" layoutY="507.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 5">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="655.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldTiempoAP2" layoutX="655.0" layoutY="572.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 5">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="655.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldTiempoAP3" layoutX="655.0" layoutY="636.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 5">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="655.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldTiempoAP4" layoutX="655.0" layoutY="700.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 5">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="655.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldTiempoAP5" layoutX="655.0" layoutY="763.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 5">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="96.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Nombre" />
+          <TextField fx:id="txtFieldMedicinaNombre1" layoutX="96.0" layoutY="859.0" prefHeight="31.0" prefWidth="216.0" promptText="Ej: Lotensin">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="55.0" layoutY="830.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Medicinas" />
+          <Text layoutX="654.0" layoutY="856.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldMedicinaTiempo1" layoutX="654.0" layoutY="859.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 2">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="654.0" layoutY="921.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldMedicinaTiempo2" layoutX="654.0" layoutY="924.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 2">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="654.0" layoutY="985.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Tiempo (en años)" />
+          <TextField fx:id="txtFieldMedicinaTiempo3" layoutX="654.0" layoutY="988.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 2">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="344.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Dosis" />
+          <TextField fx:id="txtFieldMedicinaDosis1" layoutX="344.0" layoutY="859.0" prefHeight="31.0" prefWidth="203.0" promptText="Ej: 5mg diarios">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="96.0" layoutY="919.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Nombre" />
+          <TextField fx:id="txtFieldMedicinaNombre2" layoutX="96.0" layoutY="924.0" prefHeight="31.0" prefWidth="216.0" promptText="Ej: Lotensin">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="344.0" layoutY="920.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Dosis" />
+          <TextField fx:id="txtFieldMedicinaDosis2" layoutX="344.0" layoutY="924.0" prefHeight="31.0" prefWidth="203.0" promptText="Ej: 5mg diarios">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="96.0" layoutY="983.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Nombre" />
+          <TextField fx:id="txtFieldMedicinaNombre3" layoutX="96.0" layoutY="988.0" prefHeight="31.0" prefWidth="216.0" promptText="Ej: Lotensin">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Text layoutX="344.0" layoutY="984.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Dosis" />
+          <Button fx:id="btnAddHistorialClinico" layoutX="881.0" layoutY="1041.0" mnemonicParsing="false" onAction="#actionAddHistorialClinico" prefHeight="30.0" prefWidth="187.0" style="-fx-font-size: 15;" text="Guardar Historial Clínico">
+              <font>
+                  <Font size="81.0" />
+              </font>
+          </Button>
+          <TextField fx:id="txtFieldMedicinaDosis3" layoutX="344.0" layoutY="988.0" prefHeight="31.0" prefWidth="203.0" promptText="Ej: 5mg diarios">
+              <font>
+                  <Font name="System Italic" size="12.0" />
+              </font>
+          </TextField>
+          <Button fx:id="btnCancelar" layoutX="927.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionCancelar" prefHeight="30.0" prefWidth="114.0" style="-fx-font-size: 14;" text="Cancelar" />
+      </AnchorPane>
+   </content>
+   <stylesheets>
+      <URL value="@../estilos/blankPage.css" />
+      <URL value="@../estilos/proyectoStyle.css" />
+   </stylesheets>
+</ScrollPane>

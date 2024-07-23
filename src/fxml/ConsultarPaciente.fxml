@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="621.0" prefWidth="1121.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerPacientes.ConsultarPaciente">
+    <children>
+        <ImageView fitHeight="82.0" fitWidth="170.0" layoutX="14.0" layoutY="9.0">
+            <image>
+                <Image url="@../imagenes/logo.png" />
+            </image>
+        </ImageView>
+        <MenuBar layoutX="32.0" layoutY="85.0" prefHeight="36.0" prefWidth="1043.0" style="-fx-background-color: D3A8EB; -fx-background-radius: 5;" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="46.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Pacientes">
+                    <items>
+                        <MenuItem fx:id="btnRegistroPaciente" mnemonicParsing="false" onAction="#actionRegistroPaciente" text="Registro" />
+                        <MenuItem mnemonicParsing="false" text="Consulta" />
+                        <MenuItem fx:id="btnActualizarPaciente" mnemonicParsing="false" onAction="#actionActualizarPaciente" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Citas">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registro" />
+                  <MenuItem mnemonicParsing="false" text="Consulta" />
+                  <MenuItem mnemonicParsing="false" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Médicos">
+                    <items>
+                  <MenuItem mnemonicParsing="false" text="Registro" />
+                  <MenuItem mnemonicParsing="false" text="Consulta" />
+                  <MenuItem mnemonicParsing="false" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Tratamientos">
+                    <items>
+                  <MenuItem fx:id="btnRegistroTratamiento" mnemonicParsing="false" onAction="#actionRegistroTratamiento" text="Registro" />
+                  <MenuItem mnemonicParsing="false" text="Consulta" />
+                  <MenuItem mnemonicParsing="false" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Pagos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registro Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Registro Pago Realizado" />
+                        <MenuItem mnemonicParsing="false" text="Consultar Pago Realizado" />
+                        <MenuItem mnemonicParsing="false" text="Consultar Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Actualizar Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Actualizar Pago Realizado" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sistema">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="847.0" layoutY="92.0">
+            <image>
+                <Image url="@../imagenes/sistema.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="706.0" layoutY="90.0">
+            <image>
+                <Image url="@../imagenes/wallet.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="154.0" layoutY="89.0">
+            <image>
+                <Image url="@../imagenes/pacientes.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="580.0" layoutY="90.0">
+            <image>
+                <Image url="@../imagenes/beauty.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="268.0" layoutY="87.0">
+            <image>
+                <Image url="@../imagenes/citas.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="410.0" layoutY="91.0">
+            <image>
+                <Image url="@../imagenes/medicos.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnCerrarSesion" layoutX="930.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionCerrarSesion" prefHeight="31.0" prefWidth="121.0" text="Cerrar Sesión" />
+        <Text fill="#6f6f6f" layoutX="122.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 19;" text="Filtros" />
+        <TextField fx:id="txtNombre" layoutX="435.0" layoutY="134.0" prefWidth="216.0" promptText="Nombre">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtMesNacimiento" layoutX="676.0" layoutY="134.0" prefWidth="216.0" promptText="Mes de Nacimiento">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtNumCedula" layoutX="194.0" layoutY="134.0" prefHeight="23.0" prefWidth="216.0" promptText="Número de Cédula">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </TextField>
+        <!-- Nuevo ListView para mostrar pacientes -->
+        <ListView fx:id="listViewPacientes" layoutX="50.0" layoutY="175.0" prefHeight="425.0" prefWidth="1000.0" style="-fx-background-color: D3A8EB; -fx-background-radius: 10;" stylesheets="@../estilos/proyectoStyle.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="71.0" />
+      <Button layoutX="906.0" layoutY="124.0" mnemonicParsing="false" onAction="#actionBuscar" prefHeight="46.0" prefWidth="51.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="915.0" layoutY="131.0">
+         <image>
+            <Image url="@../imagenes/busqueda.png" />
+         </image>
+      </ImageView>
+    </children>
+    <stylesheets>
+        <URL value="@../estilos/blankPage.css" />
+        <URL value="@../estilos/proyectoStyle.css" />
+    </stylesheets>
+</AnchorPane>

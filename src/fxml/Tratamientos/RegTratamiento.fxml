@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="725.0" prefWidth="1121.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerTratamientos.RegTratamiento">
+    <children>
+    <ImageView fitHeight="82.0" fitWidth="170.0" layoutX="14.0" layoutY="9.0">
+        <image>
+            <Image url="@../../imagenes/logo.png" />
+        </image>
+    </ImageView>
+    <Text layoutX="90.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 23;" text="Nuevo Tratamiento" />
+    <Text layoutX="136.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombre del Tratamiento" />
+    <TextField fx:id="txtFieldNombreTratamiento" layoutX="136.0" layoutY="207.0" prefHeight="31.0" prefWidth="332.0" promptText="Ej: Intradermo">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="491.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Tipo de Tratamiento" />
+    <TextField fx:id="txtFieldTipoTratamiento" layoutX="491.0" layoutY="206.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: Facial">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="768.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Precio del Tratamiento" />
+    <TextField fx:id="txtFieldPrecioTratamiento" layoutX="768.0" layoutY="205.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 50.00">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="695.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de sesiones 1" />
+    <TextField fx:id="txtFieldNumSesiones1" layoutX="695.0" layoutY="321.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 10">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="695.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de sesiones 2" />
+    <TextField fx:id="txtFieldNumSesiones2" layoutX="695.0" layoutY="389.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 8" style="-fx-background-color: white;">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="695.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de sesiones 3" />
+    <TextField fx:id="txtFieldNumSesiones3" layoutX="695.0" layoutY="457.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 12">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="695.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de sesiones 4" />
+    <TextField fx:id="txtFieldNumSesiones4" layoutX="695.0" layoutY="525.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 15">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+    <Text layoutX="695.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de sesiones 5" />
+    <TextField fx:id="txtFieldNumSesiones5" layoutX="695.0" layoutY="593.0" prefHeight="31.0" prefWidth="254.0" promptText="Ej: 5">
+        <font>
+            <Font name="System Italic" size="15.0" />
+        </font>
+    </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2ceff" height="36.0" layoutX="43.0" layoutY="251.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1003.0" />
+        <MenuBar layoutX="32.0" layoutY="96.0" prefHeight="36.0" prefWidth="1028.0" style="-fx-background-color: D3A8EB; -fx-background-radius: 5;" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="61.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Pacientes">
+                    <items>
+                        <MenuItem fx:id="btnRegistroPaciente" mnemonicParsing="false" onAction="#actionRegistroPaciente" text="Registro" />
+                        <MenuItem fx:id="btnConsultaPaciente" mnemonicParsing="false" onAction="#actionConsultaPaciente" text="Consulta" />
+                        <MenuItem fx:id="btnActualizarPaciente" mnemonicParsing="false" onAction="#actionActualizarPaciente" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Citas">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registro" />
+                        <MenuItem fx:id="btnConsultaPaciente1" mnemonicParsing="false" onAction="#actionConsultaPaciente" text="Consulta" />
+                        <MenuItem fx:id="btnActualizarPaciente1" mnemonicParsing="false" onAction="#actionActualizarPaciente" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Médicos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registro" />
+                        <MenuItem fx:id="btnConsultaPaciente11" mnemonicParsing="false" onAction="#actionConsultaPaciente" text="Consulta" />
+                        <MenuItem fx:id="btnActualizarPaciente11" mnemonicParsing="false" onAction="#actionActualizarPaciente" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Tratamientos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registro" />
+                        <MenuItem fx:id="btnConsultaPaciente111" mnemonicParsing="false" onAction="#actionConsultaPaciente" text="Consulta" />
+                        <MenuItem fx:id="btnActualizarPaciente111" mnemonicParsing="false" onAction="#actionActualizarPaciente" text="Actualización" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Pagos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registro Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Registro Pago Realizado" />
+                        <MenuItem mnemonicParsing="false" text="Consultar Pago Realizado" />
+                        <MenuItem mnemonicParsing="false" text="Consultar Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Actualizar Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Actualizar Pago Realizado" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sistema">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="154.0" layoutY="100.0">
+            <image>
+                <Image url="@../../imagenes/pacientes.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="268.0" layoutY="98.0">
+            <image>
+                <Image url="@../../imagenes/citas.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="410.0" layoutY="102.0">
+            <image>
+                <Image url="@../../imagenes/medicos.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="580.0" layoutY="101.0">
+            <image>
+                <Image url="@../../imagenes/beauty.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="706.0" layoutY="101.0">
+            <image>
+                <Image url="@../../imagenes/wallet.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="847.0" layoutY="103.0">
+            <image>
+                <Image url="@../../imagenes/sistema.png" />
+            </image>
+        </ImageView>
+      <Text layoutX="135.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombre de terapia 1" />
+      <TextField fx:id="txtFieldNombreTerapia1" layoutX="135.0" layoutY="317.0" prefHeight="31.0" prefWidth="428.0" promptText="Ej: Plasma">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="135.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombre de terapia 2" />
+      <TextField fx:id="txtFieldNombreTerapia2" layoutX="135.0" layoutY="385.0" prefHeight="31.0" prefWidth="428.0" promptText="Ej: Plasma">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="135.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombre de terapia 3" />
+      <TextField fx:id="txtFieldNombreTerapia3" layoutX="135.0" layoutY="453.0" prefHeight="31.0" prefWidth="428.0" promptText="Ej: Plasma">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="135.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombre de terapia 4" />
+      <TextField fx:id="txtFieldNombreTerapia4" layoutX="135.0" layoutY="521.0" prefHeight="31.0" prefWidth="428.0" promptText="Ej: Plasma">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="135.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombre de terapia 5" />
+      <TextField fx:id="txtFieldNombreTerapia5" layoutX="135.0" layoutY="589.0" prefHeight="31.0" prefWidth="428.0" promptText="Ej: Plasma">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="861.0" layoutY="651.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="152.0" text="Añadir Tratamiento" />
+      <Button fx:id="btnCerrarSesion" layoutX="924.0" layoutY="35.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Cerrar Sesión" />
+    </children>
+   <stylesheets>
+      <URL value="@../../estilos/blankPage.css" />
+      <URL value="@../../estilos/proyectoStyle.css" />
+   </stylesheets>
+</AnchorPane>

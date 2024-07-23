@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane prefHeight="621.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerPacientes.ActPaciente">
+   <content>
+      <AnchorPane prefHeight="1279.0" prefWidth="1121.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="170.0" layoutX="14.0" layoutY="9.0">
+               <image>
+                  <Image url="@../imagenes/logo.png" />
+               </image>
+            </ImageView>
+            <MenuBar layoutX="32.0" layoutY="86.0" prefHeight="36.0" prefWidth="1028.0" style="-fx-background-color: D3A8EB; -fx-background-radius: 5;" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="61.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Pacientes">
+                     <items>
+                        <MenuItem fx:id="btnRegistroPaciente" mnemonicParsing="false" onAction="#actionRegistroPaciente" text="Registro" />
+                        <MenuItem fx:id="btnConsultaPaciente" mnemonicParsing="false" onAction="#actionConsultaPaciente" text="Consulta" />
+                        <MenuItem mnemonicParsing="false" text="Actualización" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Citas">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Registro" />
+                        <MenuItem mnemonicParsing="false" text="Consulta" />
+                        <MenuItem mnemonicParsing="false" text="Actualizacion" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Médicos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Registro" />
+                        <MenuItem mnemonicParsing="false" text="Consulta" />
+                        <MenuItem mnemonicParsing="false" text="Actualización" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Tratamientos">
+                     <items>
+                        <MenuItem fx:id="btnRegistroTratamiento" mnemonicParsing="false" onAction="#actionRegistroTratamiento" text="Registro" />
+                        <MenuItem mnemonicParsing="false" text="Consulta" />
+                        <MenuItem mnemonicParsing="false" text="Actualización" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Pagos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Registro Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Registro Pago Realizado" />
+                        <MenuItem mnemonicParsing="false" text="Consultar Pago Realizado" />
+                        <MenuItem mnemonicParsing="false" text="Consultar Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Actualizar Pago Pendiente" />
+                        <MenuItem mnemonicParsing="false" text="Actualizar Pago Realizado" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Sistema">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="843.0" layoutY="92.0">
+               <image>
+                  <Image url="@../imagenes/sistema.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="711.0" layoutY="91.0">
+               <image>
+                  <Image url="@../imagenes/wallet.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="154.0" layoutY="89.0">
+               <image>
+                  <Image url="@../imagenes/pacientes.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="269.0" layoutY="88.0">
+               <image>
+                  <Image url="@../imagenes/citas.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="410.0" layoutY="91.0">
+               <image>
+                  <Image url="@../imagenes/medicos.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="584.0" layoutY="89.0">
+               <image>
+                  <Image url="@../imagenes/beauty.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnCerrarSesion" layoutX="930.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionCerrarSesion" prefHeight="31.0" prefWidth="121.0" text="Cerrar Sesión" />
+            <Text fill="#6f6f6f" layoutX="401.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 19;" text="Filtro" />
+            <TextField layoutX="500.0" layoutY="141.0" prefHeight="23.0" prefWidth="216.0" promptText="Número de Cédula">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="53.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Actualizar Paciente" />
+            <Text layoutX="108.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Nombres completos" />
+            <Text layoutX="107.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Dirección domiciliaria" />
+            <Text layoutX="660.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de cédula" />
+            <Text layoutX="659.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Número de teléfono" />
+            <TextField disable="true" layoutX="145.0" layoutY="189.0" prefHeight="31.0" prefWidth="453.0" />
+            <TextField layoutX="145.0" layoutY="255.0" prefHeight="31.0" prefWidth="453.0" />
+            <Text layoutX="107.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Correo electrónico" />
+            <TextField layoutX="145.0" layoutY="322.0" prefHeight="31.0" prefWidth="453.0" />
+            <TextField disable="true" layoutX="678.0" layoutY="189.0" prefHeight="31.0" prefWidth="254.0" />
+            <TextField layoutX="678.0" layoutY="255.0" prefHeight="31.0" prefWidth="254.0" />
+            <Text layoutX="659.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" text="Fecha de nacimiento" />
+            <TextField disable="true" layoutX="678.0" layoutY="322.0" prefHeight="31.0" prefWidth="254.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../estilos/proyectoStyle.css" />
+            <URL value="@../estilos/blankPage.css" />
+         </stylesheets>
+      </AnchorPane>
+   </content>
+</ScrollPane>

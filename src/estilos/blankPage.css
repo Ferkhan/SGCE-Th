@@ -1,0 +1,12 @@
+#btnCerrarSesion{
+    -fx-background-color: #FF5733;
+    -fx-text-fill: white;
+    -fx-background-radius: 30;
+}
+
+#btnCerrarSesion: hover{
+    -fx-background-color: #C70039;
+}
+
+
+
